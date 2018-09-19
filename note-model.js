@@ -14,14 +14,3 @@
   exports.note = note
 
 })(this)
-
-//
-// function Note(content) {
-//   var content = content
-// };
-//
-// (function(exports){
-//   Note.prototype.text = function() {
-//
-//   };
-// };)
