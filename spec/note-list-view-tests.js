@@ -3,8 +3,8 @@
 nl = noteList();
 nl.addNote("note1");
 nl.addNote("note2");
-nlv = noteListView(nl);
+nlv = noteListView();
 
-assert.isEqual(nlv.showHTML(), "<ul><li><div>note1</div></li><li><div>note2</div></li></ul>")
+assert.isEqual(nlv.showHTML(nl), "<ul><li><div>note1</div></li><li><div>note2</div></li></ul>")
 
 assert.showLog()

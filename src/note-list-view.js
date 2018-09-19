@@ -1,20 +1,15 @@
 (function(exports) {
 
-  function NoteListView(noteList) {
-    this.noteList = noteList;
+  function NoteListView() {
   }
 
-  function noteListView(noteList) {
-    return new NoteListView(noteList);
+  function noteListView() {
+    return new NoteListView();
   }
 
-  NoteListView.prototype.showNoteList = function() {
-    return this.noteList;
-  };
-
-  NoteListView.prototype.showHTML = function() {
+  NoteListView.prototype.showHTML = function(noteList) {
     var listEnd = "</ul>";
-    var allNotes = this.noteList.showNotes();
+    var allNotes = noteList.showNotes();
     var n = "<ul>"
 
     allNotes.forEach(function(element) {
