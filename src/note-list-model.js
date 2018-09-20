@@ -3,12 +3,8 @@
     this.notes = [];
   }
 
-  function noteList() {
-    return new NoteList();
-  }
-
   NoteList.prototype.addNote = function(content) {
-    this.notes.push(note(content));
+    this.notes.push(new Note(content));
   };
 
   NoteList.prototype.showNotes = function() {
@@ -17,5 +13,5 @@
     // this would allow the text of all notes to be shown.
   };
 
-  exports.noteList = noteList;
+  exports.NoteList = NoteList;
 })(this);

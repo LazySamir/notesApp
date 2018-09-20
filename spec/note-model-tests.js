@@ -1,4 +1,4 @@
-firstNote = note("first note")
+firstNote = new Note("first note")
 
 assert.isEqual(firstNote.text(), "first note")
 

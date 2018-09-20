@@ -1,8 +1,8 @@
 (function (exports) {
 
   function NoteController() {
-    this.list1 = noteList()
-    this.list1View = noteListView()
+    this.list1 = new NoteList
+    this.list1View = new NoteListView
   }
 
   NoteController.prototype.addNote = function(content) {

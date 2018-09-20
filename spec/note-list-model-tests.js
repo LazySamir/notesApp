@@ -1,5 +1,5 @@
 // Test 1
-nl = noteList();
+nl = new NoteList();
 nl.addNote("Note1");
 nl.addNote("Note2");
 assert.isIncluded(nl.showNotes()[0].text(), "Note1")

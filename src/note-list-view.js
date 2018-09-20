@@ -3,10 +3,6 @@
   function NoteListView() {
   }
 
-  function noteListView() {
-    return new NoteListView();
-  }
-
   NoteListView.prototype.showHTML = function(noteList) {
     var listEnd = "</ul>";
     var allNotes = noteList.showNotes();
@@ -23,5 +19,5 @@
 // start + notelist.join(</div></li><li><div>) + </div></li></ul>
   }
 
-  exports.noteListView = noteListView;
+  exports.NoteListView = NoteListView;
 })(this);
